@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/ju.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,16 +18,15 @@
             </div>
             <nav class="header_nav">
                 <ul>
-                    <li><strong>Главная</strong></li>
-                    <li>Расположение</li>
-                    <li>Планировки</li>
-                    <li><Button>+7 (495) 221-40-22</Button></li>
+                    <li class="page-btn" data-target="home_page"><strong>Главная</strong></li>
+                    <li class="page-btn" data-target="page_yasenevo_osn">Расположение</li>
+                    <li class="page-btn" data-target="page_plan">Планировки</li>
+                    <li><button>+7 (495) 221-40-22</button></li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <main>
+    <main class="page home_page page_active">
         <section>
             <div class="container">
                 <div class="office">
@@ -135,8 +135,187 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="container">
+    <main class="page page_yasenevo_osn">
+        <section class="page_yasenevo">
+            <div class="container">
+                <div class="office office_advantages_page_yasenevo">
+                    <h2>БК “Ясенево” расположен<br> в районе с готовой<br> инфраструктурой
+                    </h2>
+                    <div class="page_yasenevo_line"></div>
+                    <div class="advantages advantages_page_yasenevo">
+                        <ul>
+                            <li>1 мин</li>
+                            <li>пешком до метро</li>
+                        </ul>
+                    </div>
+                    <img src="assets/images/Mask group (1).png" alt="">
+                    <p>
+                        Бизнес-квартал «Ясенево» расположен на пересечении ключевых<br> 
+                        маршрутов локации – в 1 мин. от действующей станции метро и<br> 
+                        автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку.<br> 
+                        Здесь проходит единственный путь от жилых районов к метро, что<br> 
+                        обеспечивает высокую активность пешеходного трафика.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container map_location">
+                <div class="Location">
+                    <h3>Расположение<span></span></h3>
+                </div>
+            </div>
+            <img class="map_location_img" src="assets/images/image 3 (1).png" alt="">
+        </section>
+        <section>
+            <div class="container">
+                <div class="Infrastructure">
+                    <h3>Инфраструктура<span></span></h3>
+                    <h2>Район с готовой инфраструктурой</h2>
+                </div>
+                <div class="Infrastructure_info">
+                    <ul>
+                        <li><img src="assets/images/image 5.png" alt=""><p>Торгово-офисный центр с крытым переходом из метро</p></li>
+                        <li><img src="assets/images/image 5 (1).png" alt=""><p>Подземная и наземная парковка с электро-зарядками</p></li>
+                        <li><img src="assets/images/image 5 (2).png" alt=""><p>Благоустройство более 7Га с выходом к набережной</p></li>
+                        <li><img src="assets/images/image 5 (3).png" alt=""><p>Уникальные пространства для резидентов бизнес центра</p></li>
+                        <li><img src="assets/images/image 5 (4).png" alt=""><p>Магазины, панорамный ресторан, шоу-румы, эвенты</p></li>
+                        <li><img src="assets/images/image 5 (5).png" alt=""><p>«Уличная гостиная» с удобной мебелью
+                        </p></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="detail">
+                    <h3>Подробно<span></span></h3>
+                    <h2>Вся информация о проекте — <br>в презентации</h2>
+                    <div class="detail_info_pdf">
+                        <ul>
+                            <li>25 слайдов подробной информации</li>
+                            <li>Инфраструктура, благоустройство, расположение</li>
+                            <li>Инжененрия, концепция и тд.</li>
+                        </ul>
+                        <img src="assets/images/image 6.png" alt="">
+                    </div>
+                    <button>Скачать презентацию</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main class="page page_plan">
+        <section class="page_yasenevo">
+            <div class="container">
+                <div class="office office_advantages_page_yasenevo">
+                    <h2>Выбирайте планировку<br> для любого бизнеса</h2>
+                    <div class="page_plan_line"></div>
+                    <div class="advantages advantages_page_yasenevo">
+                        <ul>
+                            <li>от 60 м²</li>
+                            <li>помещения под офисы</li>
+                        </ul>
+                    </div>
+                    <img src="assets/images/unsplash_G7sE2S4Lab4.png" alt="">
+                    <p>
+                        Vita-офисы в бизнес-квартале – новые эффективные рабочие<br> 
+                        пространства на основе идеи витальности (жизненной силы),<br> 
+                        эстетики и функциональности. Создают благоприятное<br> 
+                        воздействие на эмоциональное состояние и работоспособность<br> 
+                        сотрудников, развитие бизнеса. Это единая цифровая среда,<br> 
+                        инфраструктура для резидентов и уникальные шеринг-<br>
+                        помещения: комната для тимбилдинга, лекторий, кабинет врача,<br> 
+                        йога-класс и многое другое.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container office_layout">
+                <div class="layouts">
+                    <h3>Планировки<span></span></h3>
+                </div>
+                <ul>
+                    <li>
+                        <img src="assets/images/plans/image 8.png" alt="">
+                        <h3>Офис, 174,2 м</h3>
+                        <p>
+                            Увлажнение воздуха.<br> 
+                            Кондиционирование. Контроль<br>
+                            СО2. Фильтрация воздуха. Вид на<br>
+                            пруд. Вид на жилой район
+                        </p>
+                        <button>Заказать звонок</button>
+                    </li>
+                    <li>
+                        <img src="assets/images/plans/image 10.png" alt="">
+                        <h3>Офис, 174,2 м</h3>
+                        <p>
+                            Увлажнение воздуха. <br>
+                            Кондиционирование. Контроль<br>
+                            СО2. Фильтрация воздуха. Вид на<br> 
+                            пруд. Вид на спортивно-<br>
+                            событийный комплекс
+                        </p>
+                        <button>Заказать звонок</button>
+                    </li>
+                    <li>
+                        <img src="assets/images/plans/image 12.png" alt="">
+                        <h3>Офис, 174,2 м</h3>
+                        <p>
+                            Увлажнение воздуха. <br>
+                            Кондиционирование. Контроль <br>
+                            СО2. Фильтрация воздуха. Вид на <br>
+                            пруд. Вид на жилой район
+                        </p>
+                        <button>Заказать звонок</button>
+                    </li>
+                    <li>
+                        <img src="assets/images/plans/image 8 (1).png" alt="">
+                        <h3>Офис, 174,2 м</h3>
+                        <p>
+                            Увлажнение воздуха.<br> 
+                            Кондиционирование. Контроль<br>
+                            СО2. Фильтрация воздуха. Вид на<br>
+                            пруд. Вид на жилой район
+                        </p>
+                        <button>Заказать звонок</button>
+                    </li>
+                    <li>
+                        <img src="assets/images/plans/image 8 (2).png" alt="">
+                        <h3>Офис, 174,2 м</h3>
+                        <p>
+                            Увлажнение воздуха.<br> 
+                            Кондиционирование. Контроль<br>
+                            СО2. Фильтрация воздуха. Вид на<br>
+                            пруд. Вид на жилой район
+                        </p>
+                        <button>Заказать звонок</button>
+                    </li>
+                </ul>
+            </div>
+            <img class="happy_pepol" src="assets/images/image 3.png" alt="">
+        </section>
+        <section>
+            <div class="container">
+                <div class="detail">
+                    <h3>Подробно<span></span></h3>
+                    <h2>Вся информация о проекте — <br>в презентации</h2>
+                    <div class="detail_info_pdf">
+                        <ul>
+                            <li>25 слайдов подробной информации</li>
+                            <li>Инфраструктура, благоустройство, расположение</li>
+                            <li>Инжененрия, концепция и тд.</li>
+                        </ul>
+                        <img src="assets/images/image 6.png" alt="">
+                    </div>
+                    <button>Скачать презентацию</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer> 
+        <div class="container_footer">
             <div class="footer-content">
                 <div class="footer-content_info">
                     <p>Подберем лучшее помещение<br> под ваши задачи, основываясь<br> на аналитике бизнес-среды в<br> локации.</p>
@@ -151,5 +330,7 @@
             </div>
         </div>
     </footer>
+    <script src="javaScript/jquery-3.7.1.min.js"></script>
+    <script src="javaScript/index.js"></script>
 </body>
 </html>

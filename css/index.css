@@ -14,8 +14,15 @@ header{
     width: 1200px;
     margin: 0 auto;
 }
-section{
+.conteiner{
     width: 1200px;
+    margin: 0 auto;
+}
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+section{
     margin: 0 auto;
 }
 .header_content{
@@ -50,6 +57,9 @@ section{
     font-weight: 400;
     line-height: 160%;
 }
+.header_nav ul li {
+    cursor: pointer;
+}
 .header_nav ul:last-child() {
     border: 1px solid var(--grayscale-30, #3C3C3C);
     background: #2C3878;
@@ -74,6 +84,8 @@ section{
 .container{
     padding-top: 97px;
     position: relative;
+    width: 1200px;
+    margin: 0 auto;
 }
 .line{
     width: 465px;
@@ -467,88 +479,160 @@ footer {
     padding-bottom: 40px;
 }
 
-@media (max-width: 834px){
-    .advantages {
-        position: relative;
-        top: 0px;
-        left: 0px;
-    }
-    .advantages ul {
-        list-style-type: none;
-        width: 100%;
-        height: 100%;
-        background: var(--primary-blue-100, #2C3878);
-        color: #FFF;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        margin: 0px;
-        text-align: center;
-    }
-    .header_nav ul {
-        color: var(--grayscale-50, #333);
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%; /* 22.4px */
-    }
-    .header_nav ul li strong{
-        display: none;
-    }
-    .header_nav ul li {
-        padding-right: 41px;
-    }
-    .header_nav ul li:last-child {
-        padding: 0px;
-    }
-    .header_nav ul {
-        color: var(--grayscale-50, #333);
-        font-family: Montserrat;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 160%;
-        width: 710px;
-    }
-    .office h2 {
-        color: var(--grayscale-50, #333);
-        font-family: Montserrat;
-        font-size: 72px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%;
-        width: 747px;
-        padding-bottom: 41px;
-    }
-    .advantages ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 0.5fr);
-    }
-        
-    .advantages ul :nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
-    .advantages ul :nth-child(2) { grid-area: 2 / 1 / 3 / 2; }
-    .advantages ul :nth-child(3) { grid-area: 1 / 2 / 2 / 3; }
-    .advantages ul :nth-child(4) { grid-area: 2 / 2 / 3 / 3; }
-    .advantages ul :nth-child(5) { grid-area: 1 / 3 / 2 / 4; }
-    .advantages ul :nth-child(6) { grid-area: 2 / 3 / 3 / 4; }
+.advantages_page_yasenevo ul{
+    width: 252px;
+    height: 208px;
+}
+.office_advantages_page_yasenevo h2{
+    font-size: 52px;
+}
+.page_yasenevo_line {
+    top: 134px;
+    right: 0px;
+    width: 440px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+}
+.advantages_page_yasenevo {
+    padding-top: 108px;
+    position: absolute;
+    top: 91px;
+    right: 123px;
+}
+.office_advantages_page_yasenevo img {
+    padding-top: 46px;
+}
+.office_advantages_page_yasenevo p {
+    color: var(--grayscale-10, #9C9C9C);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding-top: 100px;
+}
+.Location h3{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+    position: relative;
+    color: var(--grayscale-black, #000);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 24px */
+    text-transform: uppercase;
+}
 
-    .container {
-        padding-top: 56px;
-        position: relative;
-    }
-    .container .line {
-        top: 112px;
-    }
-    .office h2 {
-        color: var(--grayscale-50, #333);
-        font-family: Montserrat;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 140%; /* 56px */
-    }
+.Location span {
+    width: 529px;
+    height: 2px;
+    background: #000;
+    display: block;
+    top: 10px;
+    position: absolute;
+    left: 155px;
+}
+.map_location_img {
+    width: 1440px;
+    padding-top: 25px;
+    height: 825px;
+}
+.container_footer {
+    width: 100%;
+    padding-top: 97px;
+    position: relative;
+}
+.page_plan_line{
+    top: 134px;
+    right: 0px;
+    width: 492px;
+    height: 2px;
+    position: absolute;
+    background: #000;
+}
+.layouts h3{
+    color: var(--grayscale-black, #000);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+.layouts span{
+    width: 473px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    top: 107px;
+    left: 135px;
+}
+.office_layout ul li h3{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+    text-transform: uppercase;
+    padding-top: 31px;
+}
+.office_layout ul li p{
+    color: #9C9C9C;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 21.6px */
+    padding-top: 11px;
+    padding-bottom: 53px;
+}
+.office_layout ul li button{
+    background: var(--primary-blue-100, #2C3878);
+    padding: 14px 34px 14px 32px;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+}
+.office_layout ul li button:hover{
+    border: none;
+}
+.office_layout ul li{
+    list-style-type: none;
+}
+.office_layout ul li img{
+    width: 380px;
+    height: 340px;
+}
+.office_layout ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 35px;
+}
+    
+.office_layout ul :nth-child(1) { grid-area: 1 / 1 / 2 / 2; }
+.office_layout ul :nth-child(2) { grid-area: 1 / 2 / 2 / 3; }
+.office_layout ul :nth-child(3) { grid-area: 1 / 3 / 2 / 4; }
+.office_layout ul :nth-child(4) { grid-area: 2 / 1 / 3 / 2; }
+.office_layout ul :nth-child(5) { grid-area: 2 / 2 / 3 / 3; }
+
+.home_page {
+    display: none;
+}
+.page_yasenevo_osn {
+    display: none;
+}
+.page_plan{
+    display: none;
+}
+.page_active {
+    display: block;
 }
